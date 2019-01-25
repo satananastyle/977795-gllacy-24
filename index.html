@@ -5,20 +5,20 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <nav>
-        <img src="logo.jpeg" alt="Логотип магазина GlassyShop">
+        <a class="main-header-logo" href="#"><img src="logo.jpeg" alt="Логотип магазина GlassyShop"></a>
         <ul class="site-navigation">
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <span>Поиск</span>
-        <span>Вход</span>
-        <span>Корзина</span>
+        <a href="#">Поиск</a>
+        <a href="#">Вход</a>
+        <a href="#">Корзина</a>
       </nav>
     </header>
-    <main>
+    <main class="conteiner">
       <section class="slider">
         <!--Здесь будет слайдер -->
       </section>
@@ -36,20 +36,21 @@
           </li>
         </ul>
       </section>
-      <section class="hit">
-        <ul class="hit-list">
-          <li class="hit-item"><img src="orange-ice-cream.jpeg"><span>310Р/кг</span><p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p><a class="button" href="#">Быстрый просмотр</a></li>
-          <li class="hit-item"><img src="-coffee-ice-cream.jpeg"><span>380Р/кг</span><p>Сливочно-кофейное с кусочками шоколада</p><a class="button" href="#">Быстрый просмотр</a></li>
-          <li class="hit-item"><img src="strawberry-ice-cream.jpeg"><span>355Р/кг</span><p>Сливочно-клубничное с присыпкой из белого шоколада</p><a class="button" href="#">Быстрый просмотр</a></li>
-          <li class="hit-item"><img src="caramel-ice-cream.jpeg"><span>415Р/кг</span><p>Сливочное крем-брюле с карамельной подливкой</p><a class="button" href="#">Быстрый просмотр</a></li>
+      <section class="catalog">
+        <ul class="catalog-list">
+          <li><article class="catalog-item"><img src="orange-ice-cream.jpeg"><span>310Р/кг</span><h1><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h1><a class="button" href="#">Быстрый просмотр</a></li>
+          <li><article class="catalog-item"><img src="-coffee-ice-cream.jpeg"><span>380Р/кг</span><h1><a href="#">Сливочно-кофейное с кусочками шоколада</a></h1><a class="button" href="#">Быстрый просмотр</a></li>
+          <li><article class="catalog-item"><img src="strawberry-ice-cream.jpeg"><span>355Р/кг</span><h1><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h1><a class="button" href="#">Быстрый просмотр</a></li>
+          <li><article class="catalog-item"><img src="caramel-ice-cream.jpeg"><span>415Р/кг</span><h1><a href="#">Сливочное крем-брюле с карамельной подливкой</h1><a class="button" href="#">Быстрый просмотр</a></li>
         </ul>
       </section>
       <section class="info">
         <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
-        <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-        <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <ul class="info-list">
+          <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
       </section>
       <article class="new">
         <h3>Новое в нашем блоге</h3>
@@ -66,7 +67,7 @@
         <!--Здесь будет карта и контакты-->
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <div class="social">
         <ul class="social-list">
           <li><a class="social-item social-tw" href="#">Твиттер</a></li>
@@ -77,14 +78,13 @@
       </div>
       <div class="documents">
         <ul class="documents-list">
-          <li><a href="#"><b>Для поставщиков</b></a></li>
+          <li><a href="#"><strong>Для поставщиков</strong></a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
       </div>
-      <img src="logo-html.jpeg">
-      <a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy © 2019</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="logo-html.jpeg">Сделано в HTML Academy © 2019</a>
     </footer>
   </body>
 </html>
