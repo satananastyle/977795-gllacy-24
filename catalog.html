@@ -20,36 +20,42 @@
     </header>
     <main class="conteiner">
       <div class="timetable">
-        <p>С 10 до 20,ежедневно
-        <strong>8 812 450 25 25</strong></p>
+        <p>С 10 до 20,ежедневно</p>
+        <a href="#"><strong>8 812 450 25 25</strong></a>
       </div>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a>Каталог</a></li>
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
       <h1>Сливочное мороженое</h1>
       <form class="filter">
-        <p>Сортировка:</p>
-        <select name="sort">
-          <option value="pop">по популярности</option>
-          <option value="inexpensive">сначала недорогие</option>
-          <option value="expensive">сначала дорогие</option>
-          <option value="fatness">по жирности</option>
-        </select>
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <select name="sort">
+            <option value="pop">по популярности</option>
+            <option value="inexpensive">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="fatness">по жирности</option>
+          </select>
+        </fieldset>
         <!--фильтр цены-->
-        <p>Жирность:</p>
-        <label><input type="radio" name="fat" value="0">0%</label>
-        <label><input type="radio" name="fat" value="up-to-10" checked>до 10%</label>
-        <label><input type="radio" name="fat" value="up-to-30">до 30%</label>
-        <label><input type="radio" name="fat" value="more-than-30">более 30%</label>
-        <p>Наполнители</p>
-        <label><input type="checkbox" name="chocolate" checked>шоколадные</label>
-        <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
-        <label><input type="checkbox" name="fruit">фрукты</label>
-        <label><input type="checkbox" name="syrup">сиропы</label>
-        <label><input type="checkbox" name="jam">джемы</label>
-        <input type="submit" value="Применить">
+        <fieldset>
+          <legend>Жирность:</legend>
+          <label><input type="radio" name="fat" value="0">0%</label>
+          <label><input type="radio" name="fat" value="up-to-10" checked>до 10%</label>
+          <label><input type="radio" name="fat" value="up-to-30">до 30%</label>
+          <label><input type="radio" name="fat" value="more-than-30">более 30%</label>
+        </fieldset>
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <label><input type="checkbox" name="chocolate" checked>шоколадные</label>
+          <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
+          <label><input type="checkbox" name="fruit">фрукты</label>
+          <label><input type="checkbox" name="syrup">сиропы</label>
+          <label><input type="checkbox" name="jam">джемы</label>
+          <input type="submit" value="Применить">
+        </fieldset>
       </form>
       <section class="catalog">
         <ul class="catalog-list">
@@ -68,13 +74,15 @@
         </ul>
       </section>
       <div class="pages">
-        <a class="prev disabled" href="#prev"></a>
-        <a class=current href="#1">1</a>
-        <a href="#2">3</a>
-        <a href="#3">3</a>
-        <a href="#4">3</a>
-        <a href="#5">3</a>
-        <a class="next" href="#next"></a>
+        <ul class="pages-list">
+          <li><a class="pages-item prev disabled" href="#prev">Назад</a></li>
+          <li><a class="pages-item current" href="#1">1</a></li>
+          <li><a class="pages-item" href="#2">3</a></li>
+          <li><a class="pages-item" href="#3">3</a></li>
+          <li><a class="pages-item" href="#4">3</a></li>
+          <li><a class="pages-item" href="#5">3</a></li>
+          <li><a class="pages-item next" href="#next">Вперед</a></li>
+        </ul>
       </div>
     </main>
     <footer class="main-footer">
