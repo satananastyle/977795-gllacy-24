@@ -30,7 +30,26 @@
       </ul>
       <h1>Сливочное мороженое</h1>
       <form class="filter">
-        <!--Здесь будет фильтр -->
+        <p>Сортировка:</p>
+        <select name="sort">
+          <option value="pop">по популярности</option>
+          <option value="inexpensive">сначала недорогие</option>
+          <option value="expensive">сначала дорогие</option>
+          <option value="fatness">по жирности</option>
+        </select>
+        <!--фильтр цены-->
+        <p>Жирность:</p>
+        <label><input type="radio" name="fat" value="0">0%</label>
+        <label><input type="radio" name="fat" value="up-to-10" checked>до 10%</label>
+        <label><input type="radio" name="fat" value="up-to-30">до 30%</label>
+        <label><input type="radio" name="fat" value="more-than-30">более 30%</label>
+        <p>Наполнители</p>
+        <label><input type="checkbox" name="chocolate" checked>шоколадные</label>
+        <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
+        <label><input type="checkbox" name="fruit">фрукты</label>
+        <label><input type="checkbox" name="syrup">сиропы</label>
+        <label><input type="checkbox" name="jam">джемы</label>
+        <input type="submit" value="Применить">
       </form>
       <section class="catalog">
         <ul class="catalog-list">
@@ -49,7 +68,13 @@
         </ul>
       </section>
       <div class="pages">
-        <!--Здесь будет переключатель страниц -->
+        <a class="prev disabled" href="#prev"></a>
+        <a class=current href="#1">1</a>
+        <a href="#2">3</a>
+        <a href="#3">3</a>
+        <a href="#4">3</a>
+        <a href="#5">3</a>
+        <a class="next" href="#next"></a>
       </div>
     </main>
     <footer class="main-footer">
