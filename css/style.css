@@ -1,0 +1,210 @@
+body{
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+.list{
+  list-style: none;
+}
+
+.main-navigation{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.main-navigation a,
+.site-navigation a{
+  color: #ffffff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus{
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.current{
+  color: #ffffff;
+  background-color: #d07058;
+  text-decoration: none;
+}
+
+.catalog-menu a{
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.catalog-menu a:hover,
+.catalog-menu a:focus{
+  color: #323232;
+  background-color: #fbded7;
+}
+
+.timetable{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.timetable a{
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.timetable a:hover,
+.timtable a:focus{
+  color:#ffbc9e;
+}
+
+.slider{
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+.button{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #e84d37;
+  border:none;
+}
+
+a.slider-button{
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+}
+
+.promo{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.promo h2{
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.promo-item-one{
+  background: url("../img/raspberry-background.jpg") no-repeat;
+}
+
+.promo-item-two{
+  background: url("../img/chocolate-background.jpg") no-repeat;
+}
+
+.catalog{
+  font-size: 45px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.catalog span{
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.catalog a{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.catalog a:hover,
+.catalog a:focus{
+  color:#ffbc9e;
+}
+
+.info{
+  color: #323232;
+  background: url("../img/waffle.jpg") no-repeat;
+}
+
+.info b{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.new{
+  background: url("../img/strawberry-background.jpg") no-repeat;
+}
+
+.new h1{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.new a{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.new a:hover,
+.new a:focus{
+  color: #ffbc9e;
+}
+
+.distribution{
+  color: #5a5a5a;
+  background: url("../img/bg-post.svg") no-repeat;
+}
+
+.distribution-form input{
+  font: inherit;
+}
+
+.background{
+  background-color:#f8f7f4;
+}
+
+.contacts{
+  color: #323232;
+  background-color:#f8f7f4;
+}
+
+.contacts strong{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.social a{
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.documents a{
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.copyrigth a{
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
