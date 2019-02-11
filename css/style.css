@@ -1,3 +1,11 @@
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
 body{
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -207,4 +215,117 @@ a.slider-button{
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.conteiner{
+  width: 1200px;
+  margin: 0px auto;
+  padding: 0 27px;
+}
+
+.main-navigation{
+  display: flex;
+}
+
+.main-header-logo{
+  width: 154px;
+  height: 64px;
+  margin-right: 24px;
+}
+
+.site-navigation{
+  width: 384px;
+  margin: 0;
+  margin-right: 319px;
+  padding: 0;
+}
+
+.user-navigation{
+  align-self: flex-end;
+  width: 267px;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-menu,
+.slider,
+.search-form,
+.login-form,
+.feedback-form,
+.basket-form{
+  display: none;
+}
+
+.promo-list{
+  padding: 0;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-item{
+  width: 560px;
+  padding: 10px 20px;
+}
+
+.catalog-list{
+  padding: 0px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.catalog-item{
+  width: 293px;
+}
+
+.info{
+  margin-bottom: 50px;
+}
+
+.info-list{
+  display: flex;
+}
+
+.info-item{
+  width: 573px;
+}
+
+.section{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.new{
+  width: 560px;
+}
+
+.distribution{
+  width: 560px;
+}
+
+.map-contact{
+  margin-left: -27px;
+  margin-bottom: 18px;
+}
+
+.contacts{
+  width: 302px;
+}
+
+.main-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social{
+  width: 267px;
+}
+
+.documents{
+  width: 560px;
+}
+
+.copyrigth{
+  width: 267px;
 }
