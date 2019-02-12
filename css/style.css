@@ -16,11 +16,30 @@ body{
   background-color: #849d8f;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active){
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list{
   list-style: none;
 }
 
 .main-navigation{
+  padding: 10px 0px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
@@ -42,31 +61,44 @@ body{
   margin-right: 24px;
 }
 
-.site-navigation{
-  width: 384px;
+.site-navigation,
+.user-navigation{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
   margin: 0;
   margin-right: 319px;
   padding: 0;
 }
 
 .user-navigation{
-  align-self: flex-end;
   width: 267px;
   margin: 0;
   padding: 0;
 }
 
-.main-navigation a,
-.site-navigation a{
+.site-navigation a,
+.user-navigation a{
+  display: block;
+  padding: 7px 15px;
   color: #ffffff;
+  vertical-align: middle;
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus,
+.user-navigation a{
+  background-color: #9eb3a8;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
 .site-navigation a:hover,
-.site-navigation a:focus{
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus{
   color: #323232;
   background-color: #f8f7f4;
+  text-decoration: none;
+  border-radius: 15px;
 }
 
 .current{
