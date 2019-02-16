@@ -38,13 +38,6 @@ img{
   list-style: none;
 }
 
-.main-navigation{
-  padding: 10px 0px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
-}
-
 .container{
   width: 1200px;
   margin: 0px auto;
@@ -52,43 +45,58 @@ img{
 }
 
 .main-navigation{
+  padding: 10px 0px;
   display: flex;
 }
 
 .main-header-logo{
   width: 154px;
   height: 64px;
-  margin-right: 24px;
+  margin-right: 15px;
 }
 
 .site-navigation,
 .user-navigation{
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
-  margin-right: 319px;
   padding: 0;
 }
 
+.site-navigation{
+  width: 385px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-right: 350px;
+}
+
 .user-navigation{
-  width: 267px;
-  margin: 0;
-  padding: 0;
+  width: 244px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .site-navigation a,
 .user-navigation a{
   display: block;
   padding: 7px 15px;
-  color: #ffffff;
   vertical-align: middle;
+  color: #ffffff;
 }
 
 .user-navigation a{
+  padding: 5px 15px;
   background-color: #9eb3a8;
   border-radius: 15px;
   text-decoration: none;
+}
+
+.user-navigation .search{
+  padding: 5px 8px;
 }
 
 .site-navigation a:hover,
@@ -105,6 +113,7 @@ img{
   color: #ffffff;
   background-color: #d07058;
   text-decoration: none;
+  border-radius: 15px;
 }
 
 .catalog-menu a{
@@ -122,6 +131,7 @@ img{
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  text-align: right;
 }
 
 .timetable a{
@@ -155,13 +165,33 @@ img{
 }
 
 .button{
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  vertical-align: top;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   text-decoration: none;
   color: #ffffff;
-  background-color: #e84d37;
-  padding: 15px 20px;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus{
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active{
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 a.slider-button{
@@ -182,11 +212,11 @@ a.slider-button{
   font-weight: 700;
   padding: 0px;
   margin: 0px;
-
+  margin-bottom: 16px;
 }
 
 .promo p{
-  margin-bottom: 45px;
+  margin-bottom: 42px;
 }
 
 .promo-item-one{
@@ -203,12 +233,11 @@ a.slider-button{
 
 .promo-item-two .button{
   margin-left: 330px;
-  margin-bottom: 20px;
 }
 
 .promo-list{
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -266,7 +295,7 @@ a.slider-button{
   color: #323232;
   background: url("../img/waffle.jpg") no-repeat;
   margin-bottom: 40px;
-  padding: 30px 20px;
+  padding: 26px 20px;
   border-radius: 15px;
 }
 
@@ -274,11 +303,11 @@ a.slider-button{
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
-
 }
 
 .info-list{
   padding: 0px;
+  margin: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -286,8 +315,58 @@ a.slider-button{
 }
 
 .info-item{
+  position: relative;
   width: 542px;
   padding-left: 57px;
+  padding-top: 20px;
+}
+
+.farms::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/cow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.eco::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/eco.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.pack::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/thermometer.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.ice-cream::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/ice-cream.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .section{
