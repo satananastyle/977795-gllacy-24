@@ -89,14 +89,25 @@ img{
 }
 
 .user-navigation a{
-  padding: 5px 15px;
+  padding: 7px 15px;
   background-color: #9eb3a8;
   border-radius: 15px;
   text-decoration: none;
 }
 
 .user-navigation .search{
-  padding: 5px 8px;
+  padding: 7px 7px;
+  border-radius: 1
+}
+
+.user-navigation a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-navigation span{
+  padding-left: 5px;
 }
 
 .site-navigation a:hover,
@@ -110,7 +121,9 @@ img{
 }
 
 .user-navigation a:hover path,
-.user-navigation a:focus path{
+.user-navigation a:focus path,
+.user-navigation a:hover circle,
+.user-navigation a:focus circle{
   fill: #323232;
 }
 
@@ -153,15 +166,27 @@ img{
   color:#ffbc9e;
 }
 
+.column{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .breadcrumbs{
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 220px;
 }
 
-.column{
-  display: flex;
-  justify-content: space-between;
+.breadcrumbs a{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .slider{
@@ -204,6 +229,116 @@ a.slider-button{
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
+}
+
+.big-filter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 861px;
+}
+
+.big-filter legend{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.filter{
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+.filter-sort select{
+  margin: 0px;
+  margin-bottom: 17px;
+  padding: 8px 15px;
+  width: 193px;
+  background-color: #abbcb2;
+  border: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.range-controls {
+  margin-bottom: 17px;
+  position: relative;
+  height: 36px;
+  padding-top: 16px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #abbcb2;
+  border-radius: 20px;
+}
+
+.range-controls .scale {
+  height: 4px;
+  width: 176px;
+  background: #d1dad3;
+}
+
+.range-controls .bar {
+  position: absolute;
+  left: 40px;
+  width: 100px;
+  height: 4px;
+  background: #f8f7f4;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 8px;
+  left: 35px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-max {
+  left: 132px;
+}
+
+.filter-fat{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 415px;
+  padding: 10px 14px;
+  margin-bottom: 17px;
+  background-color: #abbcb2;
+  border-radius: 20px;
+}
+
+.filter-topping{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 702px;
+  padding: 10px 19px;
+  background-color: #abbcb2;
+  border-radius: 20px;
+}
+
+.big-filter button{
+  margin: 0px;
+  padding: 10px 27px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #a6b7ae;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
 }
 
 .promo{
@@ -483,7 +618,6 @@ a.slider-button{
 .contacts p{
   padding: 0px;
   margin: 0px;
-  /*margin-bottom: 25px;*/
 }
 
 .contacts address{
@@ -493,6 +627,10 @@ a.slider-button{
   font-style: normal;
   line-height: 24px;
   font-weight: 700;
+}
+
+.contacts .space{
+  margin-bottom: 25px;
 }
 
 .contacts .button{
@@ -582,7 +720,7 @@ a.slider-button{
   color:#ffbc9e;
 }
 
-.documents-list1 li{
+.provider li{
   position: relative;
   padding-left: 22px;
 }

@@ -27,9 +27,21 @@
           <li><a href="#">О Компании</a></li>
         </ul>
         <ul class="list user-navigation">
-          <li><a class="search" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg><span class="visually-hidden">Поиск</span></a></li>
-          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Вход</a></li>
-          <li><a class="basket-catalog" href="#" aria-label="Корзина">2 товара</a></li>
+          <li>
+            <a class="search" href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
+              <span>Вход</span>
+            </a>
+          </li>
+          <li>
+            <a class="basket-catalog" href="#" aria-label="Корзина">
+              <span>2 товара</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -46,8 +58,8 @@
         </div>
       </div>
       <h1>Сливочное мороженое</h1>
-      <form class="filter">
-        <fieldset>
+      <form class="big-filter">
+        <fieldset class="filter filter-sort">
           <legend>Сортировка:</legend>
           <select name="sort">
             <option value="pop">по популярности</option>
@@ -56,23 +68,36 @@
             <option value="fatness">по жирности</option>
           </select>
         </fieldset>
-        <!--фильтр цены-->
-        <fieldset>
+        <fieldset class="filter">
+          <legend>Цена: 100 руб. - 500 руб.</legend>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+        </fieldset>
+        <fieldset class="filter">
           <legend>Жирность:</legend>
-          <label><input type="radio" name="fat" value="0">0%</label>
-          <label><input type="radio" name="fat" value="up-to-10" checked>до 10%</label>
-          <label><input type="radio" name="fat" value="up-to-30">до 30%</label>
-          <label><input type="radio" name="fat" value="more-than-30">более 30%</label>
+          <div class="filter-fat">
+            <label><input type="radio" name="fat" value="0">0%</label>
+            <label><input type="radio" name="fat" value="up-to-10" checked>до 10%</label>
+            <label><input type="radio" name="fat" value="up-to-30">до 30%</label>
+            <label><input type="radio" name="fat" value="more-than-30">более 30%</label>
+          </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="filter">
           <legend>Наполнители:</legend>
-          <label><input type="checkbox" name="chocolate" checked>шоколадные</label>
-          <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
-          <label><input type="checkbox" name="fruit">фрукты</label>
-          <label><input type="checkbox" name="syrup">сиропы</label>
-          <label><input type="checkbox" name="jam">джемы</label>
-          <input type="submit" value="Применить">
+          <div class="filter-topping">
+            <label><input type="checkbox" name="chocolate" checked>шоколадные</label>
+            <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label>
+            <label><input type="checkbox" name="fruit">фрукты</label>
+            <label><input type="checkbox" name="syrup">сиропы</label>
+            <label><input type="checkbox" name="jam">джемы</label>
+          </div>
         </fieldset>
+        <button type="submit" value="Применить">Применить</button>
       </form>
       <section class="catalog">
         <ul class="list catalog-list">
@@ -112,11 +137,11 @@
         </ul>
       </div>
       <div class="documents">
-        <ul class="list documents-list1">
+        <ul class="list provider">
           <li><a class="strong" href="#"><strong>Для поставщиков</strong></a></li>
           <li><a href="#">О производстве</a></li>
         </ul>
-        <ul class="list documents-list2">
+        <ul class="list documents-list">
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>
         </ul>
