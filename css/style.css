@@ -740,6 +740,29 @@ a.slider-button{
   background-position: 0 0;
 }
 
+.pages{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.pages-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 188px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.pages-list a{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: inherit;
+  text-decoration: none;
+}
+
 .main-footer{
   display: flex;
   justify-content: space-between;
