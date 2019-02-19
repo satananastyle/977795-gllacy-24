@@ -55,26 +55,35 @@ img{
   margin-right: 15px;
 }
 
-.site-navigation,
-.user-navigation{
+.site-navigation{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
-}
-
-.site-navigation{
-  width: 385px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
-  margin-right: 350px;
+  margin-right: 319px;
 }
 
 .user-navigation{
-  width: 244px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation{
+  width: 395px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+
+}
+
+.user-navigation{
+  width: 267px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -90,6 +99,7 @@ img{
 
 .user-navigation a{
   padding: 7px 15px;
+  margin-left: 10px;
   background-color: #9eb3a8;
   border-radius: 15px;
   text-decoration: none;
@@ -97,7 +107,8 @@ img{
 
 .user-navigation .search{
   padding: 7px 7px;
-  border-radius: 1
+  border-radius: 18px;
+  margin-left: auto;
 }
 
 .user-navigation a{
@@ -125,6 +136,17 @@ img{
 .user-navigation a:hover circle,
 .user-navigation a:focus circle{
   fill: #323232;
+}
+
+.user-navigation .basket-catalog{
+  padding: 9px 15px;
+  padding-left: 40px;
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: url("../img/basket-red.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 5px;
 }
 
 .current{
@@ -187,6 +209,31 @@ img{
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
+  text-decoration: underline;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active{
+  color:#ffbc9e;
+}
+
+ .breadcrumbs .breadcrumbs-current{
+  text-decoration: none;
+}
+
+.breadcrumbs li{
+  position: relative;
+}
+
+.breadcrumbs li::after{
+  content: "»";
+  position: absolute;
+  left: 61px;
+}
+
+.breadcrumbs .breadcrumbs-current::after{
+  display: none;
 }
 
 .slider{
@@ -237,6 +284,7 @@ a.slider-button{
   justify-content: space-between;
   align-items: flex-end;
   width: 861px;
+  margin-bottom: 40px;
 }
 
 .big-filter legend{
@@ -264,6 +312,12 @@ a.slider-button{
   font-weight: 500;
   color: #ffffff;
   border-radius: 20px;
+}
+
+.filter-sort select:hover,
+.filter-sort select:focus{
+  background-color: #ffffff;
+  color: #323232;
 }
 
 .range-controls {
@@ -339,6 +393,13 @@ a.slider-button{
   background: #a6b7ae;
   border: 2px solid #ffffff;
   border-radius: 20px;
+  outline: none;
+}
+
+.big-filter button:hover,
+.big-filter button:focus{
+  background: #ffffff;
+  color: #323232;
 }
 
 .promo{
@@ -401,12 +462,26 @@ a.slider-button{
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
+  margin-top: 15px;
 }
 
 .catalog span{
   font-size: 30px;
   line-height: 45px;
   font-weight: 700;
+  padding-left: 30px;
+}
+
+.catalog span::before{
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 82px;
+  width: 29px;
+  height: 32px;
+  background-image: url("../img/ruble.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .catalog a{
@@ -435,8 +510,10 @@ a.slider-button{
 }
 
 .catalog-item{
+  position: relative;
   width: 267px;
   margin-bottom: 40px;
+  padding-top: 5px;
 }
 
 .hit{
@@ -446,13 +523,26 @@ a.slider-button{
 .hit::before{
   content: "";
   position: absolute;
-  top: 0px;
+  top: 5px;
   left: 0px;
   width: 61px;
   height: 61px;
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.catalog-item div{
+  position: absolute;
+  top: 215px;
+}
+
+.catalog-item:hover,
+.catalog-item:focus{
+  background-color: #9bafa3;
+  background-size: 5px 5px;
+
+  border-radius: 5px;
 }
 
 .info{
