@@ -64,7 +64,7 @@ img{
   padding: 0;
 }
 
-.slider{
+.slide{
   display: none;
 }
 
@@ -92,9 +92,7 @@ img{
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
   vertical-align: top;
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -246,7 +244,6 @@ a:focus circle{
   padding: 9px 15px;
   padding-left: 45px;
   color: #000000;
-
   background-color: #f7f6f3;
   background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
@@ -318,6 +315,44 @@ a:focus circle{
   background-color: #d1d0ce;
 }
 
+.searching{
+  position: relative;
+}
+
+.search-list{
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 36px;
+  left: -310px;
+}
+
+.search-form{
+  width: 341px;
+  padding: 20px 15px;
+  background: #f8f7f4;
+  border-radius: 5px;
+}
+
+.search-form input{
+  width: 311px;
+  padding: 9px 14px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.searching:hover .search-list,
+.searching:focus .search-list{
+  display: block;
+}
+
 .timetable{
   font-size: 14px;
   line-height: 16px;
@@ -369,7 +404,7 @@ a:focus circle{
   color:#ffbc9e;
 }
 
- .breadcrumbs .breadcrumbs-current{
+.breadcrumbs-current a{
   text-decoration: none;
 }
 
@@ -384,6 +419,8 @@ a:focus circle{
 }
 
 .breadcrumbs .breadcrumbs-current::after{
+  display: none;
+}{
   display: none;
 }
 
@@ -1040,7 +1077,6 @@ a.slide-button{
   color:#ffbc9e;
 }
 
-.search-form,
 .login-form,
 .feedback-form,
 .basket-form,
