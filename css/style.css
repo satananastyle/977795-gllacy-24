@@ -319,7 +319,7 @@ a:focus circle{
   position: relative;
 }
 
-.search-list{
+.modal-search{
   display: none;
   margin: 0px;
   padding: 0px;
@@ -348,8 +348,70 @@ a:focus circle{
   border-radius: 5px;
 }
 
-.searching:hover .search-list,
-.searching:focus .search-list{
+.searching:hover .modal-search,
+.searching:focus .modal-search{
+  display: block;
+}
+
+.login{
+  position: relative;
+}
+
+.modal-login{
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 36px;
+  left: -183px;
+  z-index: 10;
+}
+
+.login-form{
+  width: 277px;
+  padding: 20px 20px;
+  background: #f8f7f4;
+  border-radius: 5px;
+}
+
+.login-form p{
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.login-form input{
+  width: 240px;
+  padding: 10px 15px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.login-form a{
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+  text-decoration: underline;
+  background: none;
+}
+
+.login-form a:hover,
+.login-form a:focus{
+  color:#ffbc9e;
+  text-decoration: underline;
+}
+
+.login:hover .modal-login,
+.login:focus .modal-login{
   display: block;
 }
 
@@ -1077,7 +1139,6 @@ a.slide-button{
   color:#ffbc9e;
 }
 
-.login-form,
 .feedback-form,
 .basket-form,
 .button-catalog{
