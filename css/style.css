@@ -631,12 +631,22 @@ a:focus circle{
   font-weight: 500;
   color: #ffffff;
   border-radius: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 168px 13px;
 }
 
 .filter-sort select:hover,
 .filter-sort select:focus{
   background-color: #ffffff;
   color: #323232;
+  background-image: url("../img/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 170px 16px;
 }
 
 .range-controls {
