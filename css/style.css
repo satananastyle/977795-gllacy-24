@@ -415,6 +415,94 @@ a:focus circle{
   display: block;
 }
 
+.feedback-form{
+  display: none;
+  width: 477px;
+  padding: 20px 25px 25px;
+  position: absolute;
+  top: 338px;
+  left: 363px;
+  background-color: #f8f7f4;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+
+  border-radius: 10px;
+}
+
+.feedback-form p{
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.modal-close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+
+  width: 19px;
+  height: 2px;
+
+  background-color: #231f20;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.feedback-form input{
+  width: 265px;
+  padding: 10px 15px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.feedback-form textarea{
+  width: 427px;
+  padding: 10px 15px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.feedback-form .button{
+  position: relative;
+  left: 300px;
+}
+
 .timetable{
   font-size: 14px;
   line-height: 16px;
@@ -1139,7 +1227,6 @@ a.slide-button{
   color:#ffbc9e;
 }
 
-.feedback-form,
 .basket-form,
 .button-catalog{
   display: none;
