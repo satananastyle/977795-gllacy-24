@@ -21,7 +21,7 @@
               <ul class="list catalog-menu">
                 <li><a class="new" href="#">Новинки</a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
-                <li><a href="#">Щербет</a></li>
+                <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лед</a></li>
                 <li><a href="#">Мелорин</a></li>
               </ul>
@@ -54,7 +54,7 @@
                     <p><input type="text" placeholder="Электронная почта"></p>
                     <p><input type="password" placeholder="Пароль"></p>
                     <div class="column">
-                      <button class="button" type="submit" value="Войти">Войти</button>
+                      <button class="button login-button" type="submit" value="Войти">Войти</button>
                       <div>
                         <a href="#">Забыли пароль?</a>
                         <a href="#">Новая регистрация</a>
@@ -122,7 +122,7 @@
         <section class="catalog">
           <ul class="list catalog-list">
             <li>
-              <article class="catalog-item">
+              <article class="catalog-item hit">
                 <img src="img/orange-ice-cream.jpg" width="267" height="267" alt="Шарик апельсинового мороженого">
                 <p>310<span>/кг</span></p>
                 <h1><a class="ice-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h1>
@@ -130,7 +130,7 @@
               </article>
             </li>
             <li>
-              <article class="catalog-item">
+              <article class="catalog-item hit">
                 <img src="img/coffee-ice-cream.jpg" width="267" height="267" alt="Шарик кофейного мороженого">
                 <p>380<span>/кг</span></p>
                 <h1><a class="ice-name" href="#">Сливочно-кофейное с кусочками шоколада</a></h1>
@@ -138,7 +138,7 @@
               </article>
             </li>
             <li>
-              <article class="catalog-item">
+              <article class="catalog-item hit">
                 <img src="img/strawberry-ice-cream.jpg" width="267" height="267" alt="Шарик клубничного мороженого">
                 <p>355<span>/кг</span></p>
                 <h1><a class="ice-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h1>
@@ -146,7 +146,7 @@
               </article>
             </li>
             <li>
-              <article class="catalog-item">
+              <article class="catalog-item hit">
                 <img src="img/caramel-ice-cream.jpg" width="267" height="267"  alt="Шарик мороженого крем-брюле">
                 <p>415<span>/кг</span></p>
                 <h1><a class="ice-name" href="#">Сливочное крем-брюле с карамельной подливкой</a></h1>
@@ -192,7 +192,6 @@
         </section>
       </main>
       <footer class="main-footer">
-        <div class="social">
           <ul class="list social-list">
             <li>
               <a class="social-item social-tw" href="#">
@@ -219,7 +218,6 @@
               </a>
             </li>
           </ul>
-        </div>
         <div class="documents">
           <ul class="list provider">
             <li><a class="strong" href="#"><strong>Для поставщиков</strong></a></li>
@@ -239,13 +237,74 @@
       </footer>
       <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
         <p>Мы обязательно вам ответим!</p>
-        <p><input type="text" placeholder="Как вас зовут?"></p>
-        <p><input type="text" placeholder="Ваша почта для ответа?"></p>
-        <p><textarea rows="6" placeholder="Напишите что-нибудь..."></textarea></p>
+        <p><input type="text" name="name" placeholder="Как вас зовут?"></p>
+        <p><input type="text" name="mail" placeholder="Ваша почта для ответа?"></p>
+        <p><textarea rows="6" name="letter" placeholder="Напишите что-нибудь..."></textarea></p>
         <button class="button" type="submit" value="Отправить">Отправить</button>
-        <button class="modal-close" type="reset" value="Закрыть">Закрыть</button>
+        <button class="modal-close" value="Закрыть">Закрыть</button>
       </form>
     </div>
   </div>
+  <script>
+    var feedback = document.querySelector(".feedback-button");
+
+    var popup = document.querySelector(".feedback-form");
+    var close = popup.querySelector(".modal-close");
+
+    var form = popup.querySelector("form");
+    var name = popup.querySelector("[name=name]");
+    var mail = popup.querySelector("[name=mail]");
+    var letter = popup.querySelector("[name=letter]");
+
+    var isStorageSupport = true;
+    var storage = "";
+
+    try {
+      storage = localStorage.getItem("name");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
+    feedback.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+
+      if (storage) {
+        name.value = storage;
+        mail.focus();
+      } else {
+        name.focus();
+      }
+    });
+
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
+    });
+
+    form.addEventListener("submit", function (evt) {
+      if (!name.value || !mail.value) {
+        evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("name", login.value);
+        }
+      }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popup.classList.contains("modal-show")) {
+          popup.classList.remove("modal-show");
+          popup.classList.remove("modal-error");
+        }
+      }
+    });
+  </script>
 </body>
 </html>
