@@ -159,6 +159,11 @@ a.slide-button{
   cursor: pointer;
 }
 
+.slider-controls label:hover,
+.slider-controls label:focus{
+  background-color: rgba(255, 255, 255, 0.4)
+}
+
 #product-1:checked ~ .site-wrapper{
   background-color: #849d8f;
   background-image: url("../img/slider-one.png");
@@ -267,6 +272,10 @@ a.slide-button{
   border-radius: 15px;
 }
 
+.site-navigation a:active{
+  box-shadow: inset 0 7px 5px -5px #323232;
+}
+
 a:hover path,
 a:focus path,
 a:hover circle,
@@ -307,6 +316,7 @@ a:focus circle{
   background-color: #f8f7f4;
   border-radius: 5px;
   z-index: 10;
+  box-shadow: 0 15px 30px -5px #323232;
 }
 
 .site-navigation-current:hover .catalog-menu,
@@ -363,6 +373,7 @@ a:focus circle{
   position: absolute;
   top: 35px;
   left: -310px;
+  box-shadow: 0 15px 30px -5px #323232;
 }
 
 .search-form{
@@ -400,6 +411,7 @@ a:focus circle{
   top: 35px;
   left: -175px;
   z-index: 10;
+  box-shadow: 0 15px 30px -5px #323232;
 }
 
 .modal-login .login-button{
@@ -476,6 +488,7 @@ a:focus circle{
   padding: 12px 15px 20px;
   border-radius: 5px;
   z-index: 10;
+  box-shadow: 0 15px 30px -5px #323232;
 }
 
 .basket-table{
@@ -625,9 +638,9 @@ a:focus circle{
   display: none;
   width: 477px;
   padding: 15px 25px 27px;;
-  position: absolute;
-  top: 335px;
-  left: 394px;
+  position: fixed;
+left: 392px;
+top: 105px;
   background-color: #f8f7f4;
   font-size: 24px;
   line-height: 28px;
@@ -898,8 +911,8 @@ a:focus circle{
 .filter-input-radio:checked + label::before{
   content: "";
   position: absolute;
-  top: 0px;
-  left: -2px;
+  top: -1px;
+  left: 0px;
   width: 25px;
   height: 25px;
   background-image: none;
@@ -908,8 +921,8 @@ a:focus circle{
 .filter-input-radio:checked + label::after{
   content: "";
   position: absolute;
-  top: 0px;
-  left: -2px;
+  top: -1px;
+  left: 0px;
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-on.svg");
@@ -983,6 +996,12 @@ a:focus circle{
 .big-filter button:focus{
   background: #ffffff;
   color: #323232;
+}
+
+.big-filter button:active{
+  border:none;
+  padding: 9px 29px 10px;
+  box-shadow: inset 0 7px 5px -5px #323232;
 }
 
 .promo{
@@ -1095,19 +1114,13 @@ a:focus circle{
 
 .catalog-list li{
   position: relative;
-  margin: 0px 13px 8px -13px;
+  margin: 0px 13px 4px -13px;
   width: 293px;
   padding: 5px 13px 20px;
 }
 
 .catalog-list li:nth-child(4n){
   margin-right: 0px;
-}
-
-li .catalog-item{
-  width: 267px;
-  margin: 0px;
-  padding: 0px;
 }
 
 .catalog-list img{
@@ -1131,19 +1144,35 @@ li .catalog-item{
   background-position: 0 0;
 }
 
-.catalog-item p{
+.ice p{
   position: absolute;
-  top: 214px;
-  left: 11px;
+  top: 211px;
+  left: -1px;
   padding: 0px;
   margin: 0px;
   margin-bottom: 32px;
+  text-shadow: 1px 1px 1px #323232;
 }
 
 .catalog-list li:hover,
 .catalog-list li:focus{
+  position: relative;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
+  z-index: 10;
+}
+
+.ice .button-catalog{
+  display: none;
+}
+
+.ice .button-catalog:hover,
+.ice .button-catalog:focus{
+  color: #ffffff;
+}
+
+.catalog-item:hover .button-catalog{
+  display: block;
 }
 
 
@@ -1554,8 +1583,4 @@ li .catalog-item{
 .copyrigth a:focus,
 .copyrigth a:active{
   color:#ffbc9e;
-}
-
-.button-catalog{
-  display: none;
 }

@@ -76,7 +76,7 @@
       <main>
         <div class="timetable">
           <p>С 10 до 20, ежедневно</p>
-          <a href="tel:88124502525">8 812 450 25 25</a>
+          <a href="tel:88124502525">8 812 450-25-25</a>
         </div>
         <section class="slider">
           <div class="slider-controls">
@@ -121,32 +121,32 @@
         </section>
         <section class="catalog">
           <ul class="list catalog-list">
-            <li>
-              <article class="catalog-item hit">
+            <li class="catalog-item">
+              <article class="ice hit">
                 <img src="img/orange-ice-cream.jpg" width="267" height="267" alt="Шарик апельсинового мороженого">
                 <p>310<span>/кг</span></p>
                 <h1><a class="ice-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h1>
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </article>
             </li>
-            <li>
-              <article class="catalog-item hit">
+            <li class="catalog-item">
+              <article class="ice hit">
                 <img src="img/coffee-ice-cream.jpg" width="267" height="267" alt="Шарик кофейного мороженого">
                 <p>380<span>/кг</span></p>
                 <h1><a class="ice-name" href="#">Сливочно-кофейное с кусочками шоколада</a></h1>
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </article>
             </li>
-            <li>
-              <article class="catalog-item hit">
+            <li class="catalog-item">
+              <article class="ice hit">
                 <img src="img/strawberry-ice-cream.jpg" width="267" height="267" alt="Шарик клубничного мороженого">
                 <p>355<span>/кг</span></p>
                 <h1><a class="ice-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h1>
                 <a class="button button-catalog" href="#">Быстрый просмотр</a>
               </article>
             </li>
-            <li>
-              <article class="catalog-item hit">
+            <li class="catalog-item">
+              <article class="ice hit">
                 <img src="img/caramel-ice-cream.jpg" width="267" height="267"  alt="Шарик мороженого крем-брюле">
                 <p>415<span>/кг</span></p>
                 <h1><a class="ice-name" href="#">Сливочное крем-брюле с карамельной подливкой</a></h1>
@@ -237,7 +237,7 @@
       </footer>
       <form class="feedback-form" method="post" action="https://echo.htmlacademy.ru">
         <p>Мы обязательно вам ответим!</p>
-        <p><input type="text" name="name" placeholder="Как вас зовут?"></p>
+        <p><input type="text" name="person" placeholder="Как вас зовут?"></p>
         <p><input type="text" name="mail" placeholder="Ваша почта для ответа?"></p>
         <p><textarea rows="6" name="letter" placeholder="Напишите что-нибудь..."></textarea></p>
         <button class="button" type="submit" value="Отправить">Отправить</button>
@@ -251,31 +251,16 @@
     var popup = document.querySelector(".feedback-form");
     var close = popup.querySelector(".modal-close");
 
-    var form = popup.querySelector("form");
-    var name = popup.querySelector("[name=name]");
+    var person = popup.querySelector("[name=person]");
     var mail = popup.querySelector("[name=mail]");
     var letter = popup.querySelector("[name=letter]");
 
-    var isStorageSupport = true;
-    var storage = "";
-
-    try {
-      storage = localStorage.getItem("name");
-    } catch (err) {
-      isStorageSupport = false;
-    }
 
     feedback.addEventListener("click", function (evt) {
       evt.preventDefault();
       popup.classList.add("modal-show");
-
-      if (storage) {
-        name.value = storage;
-        mail.focus();
-      } else {
-        name.focus();
-      }
-    });
+      person.focus();
+  });
 
     close.addEventListener("click", function (evt) {
       evt.preventDefault();
@@ -283,16 +268,12 @@
       popup.classList.remove("modal-error");
     });
 
-    form.addEventListener("submit", function (evt) {
-      if (!name.value || !mail.value) {
+    popup.addEventListener("submit", function (evt) {
+      if (!person.value || !mail.value || !letter.value) {
         evt.preventDefault();
         popup.classList.remove("modal-error");
         popup.offsetWidth = popup.offsetWidth;
         popup.classList.add("modal-error");
-      } else {
-        if (isStorageSupport) {
-          localStorage.setItem("name", login.value);
-        }
       }
     });
 
