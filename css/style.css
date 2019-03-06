@@ -386,12 +386,15 @@ a:focus circle{
 .search-form input{
   width: 311px;
   padding: 9px 14px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  color: #999999;
+  color: #323232;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+}
+
+.search-form input:focus{
+  outline: 2px solid #8fbdec;
 }
 
 .searching:hover .modal-search,
@@ -440,12 +443,16 @@ a:focus circle{
 .login-form input{
   width: 240px;
   padding: 9px 13px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #999999;
+  color: #323232;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+}
+
+.login-form input:focus{
+  outline: 2px solid #8fbdec;
 }
 
 .login-form a{
@@ -676,10 +683,13 @@ top: 105px;
   padding: 9px 15px;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  color: #999999;
+  color: #323232;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+}
+
+.feedback-form input:focus{
+  outline: 2px solid #8fbdec;
 }
 
 .feedback-form textarea{
@@ -692,6 +702,10 @@ top: 105px;
   color: #999999;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
+}
+
+.feedback-form textarea:focus{
+  outline: 2px solid #8fbdec;
 }
 
 .feedback-form .button{
@@ -1303,13 +1317,21 @@ top: 105px;
   font: inherit;
   padding: 9px 15px;
   width: 370px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
+}
+
+.distribution-form input:focus{
+  outline: 2px solid #8fbdec;
 }
 
 .background{
   background-color:#f8f7f4;
   padding: 30px 20px 35px 20px;
   border-radius: 15px;
-
 }
 
 .background p{
