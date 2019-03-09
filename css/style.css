@@ -21,6 +21,12 @@ img{
   height: auto;
 }
 
+.body-catalog{
+  background: #849d8f url("../img/gradient.png") no-repeat;
+  background-size: contain;
+
+}
+
 .visually-hidden-radio{
   position: absolute;
   width: 1px;
