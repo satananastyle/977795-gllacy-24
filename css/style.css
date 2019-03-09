@@ -1074,7 +1074,7 @@ top: 105px;
   line-height: 41px;
   font-weight: 700;
   margin: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .catalog-list h1{
@@ -1082,8 +1082,8 @@ top: 105px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
+  margin: 0;
   margin-top: 5px;
-  margin-bottom: 8px;
 }
 
 .catalog span{
@@ -1127,10 +1127,10 @@ top: 105px;
 }
 
 .catalog-list li{
-  position: relative;
-  margin: 0px 13px 4px -13px;
   width: 293px;
-  padding: 5px 13px 20px;
+  position: relative;
+  margin: 0px 13px 15px -13px;
+
 }
 
 .catalog-list li:nth-child(4n){
@@ -1149,35 +1149,39 @@ top: 105px;
 .hit::before{
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 5px;
+  left: 15px;
   width: 61px;
   height: 61px;
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  z-index: 11;
+}
+
+.catalog-item .ice{
+  width: 293px;
+  padding: 5px 13px 20px;
 }
 
 .ice p{
   position: absolute;
-  top: 211px;
-  left: -1px;
+  top: 215px;
+  left: 10px;
   padding: 0px;
   margin: 0px;
   margin-bottom: 32px;
   text-shadow: 1px 1px 1px #323232;
 }
 
-.catalog-list li:hover,
-.catalog-list li:focus{
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  z-index: 10;
-}
-
 .ice .button-catalog{
   display: none;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+.catalog-item:hover .button-catalog{
+  display: inline-block;
 }
 
 .ice .button-catalog:hover,
@@ -1185,8 +1189,11 @@ top: 105px;
   color: #ffffff;
 }
 
-.catalog-item:hover .button-catalog{
-  display: block;
+.catalog-item .ice:hover{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  z-index: 10;
 }
 
 
@@ -1389,15 +1396,15 @@ top: 105px;
   position: absolute;
   top: 138px;
   left: 265px;
-  width: 80px;
+  width: 200px;
   height: 140px;
-  background-image: url("../img/pin.svg");
+  background-image: url("../img/pin.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .pages{
-  position:relative;
+  position: relative;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 25px;
@@ -1406,7 +1413,7 @@ top: 105px;
 .pages::after{
   content:"";
   position: absolute;
-  top: 90px;
+  top: 98px;
   width: 100%;
   height: 1px;
   background-color: #a9bbb1;
@@ -1418,7 +1425,7 @@ top: 105px;
   justify-content: flex-end;
   width: 267px;
   padding: 0px;
-  margin: 35px -10px 20px 0;
+  margin: 43px -8px 20px 0;
 }
 
 .pages-list{
