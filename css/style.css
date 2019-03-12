@@ -24,7 +24,6 @@ img{
 .body-catalog{
   background: #849d8f url("../img/gradient.png") no-repeat;
   background-size: contain;
-
 }
 
 .visually-hidden-radio{
@@ -1046,6 +1045,7 @@ top: 105px;
 
 .promo-item-one{
   background: url("../img/raspberry-background.jpg") no-repeat;
+  background-size: cover;
 }
 
 .promo-item-one .button{
@@ -1054,6 +1054,7 @@ top: 105px;
 
 .promo-item-two{
   background: url("../img/chocolate-background.jpg") no-repeat;
+  background-size: cover;
 }
 
 .promo-item-two .button{
@@ -1069,7 +1070,6 @@ top: 105px;
 
 .promo-item{
   width: 560px;
-  height: 230px;
   padding: 15px 20px 20px;
   border-radius: 15px;
 }
@@ -1205,7 +1205,8 @@ top: 105px;
 
 .info{
   color: #323232;
-  background: url("../img/waffle.jpg") no-repeat;
+  background: url("../img/waffle.jpg");
+  background-size: cover;
   margin-bottom: 40px;
   padding: 26px 20px;
   border-radius: 15px;
@@ -1223,7 +1224,6 @@ top: 105px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .info-item{
