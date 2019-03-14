@@ -904,6 +904,7 @@ top: 105px;
   left: 132px;
 }
 
+
 .filter-fat{
   display: flex;
   flex-wrap: wrap;
@@ -915,43 +916,37 @@ top: 105px;
   border-radius: 20px;
 }
 
-.filter-fat li{
-  position: relative;
+.fatness{
   padding-left: 32px;
 }
 
-.filter-input-radio + label::before{
-  content: "";
+.fatness-input{
   position: absolute;
-  top: -1px;
-  left: 0px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.fatness-box{
+  position: absolute;
+  margin-left: -32px;
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  opacity: 0.8;
 }
 
-.filter-input-radio:checked + label::before{
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 0px;
-  width: 25px;
-  height: 25px;
-  background-image: none;
-}
-
-.filter-input-radio:checked + label::after{
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 0px;
-  width: 25px;
-  height: 25px;
+.fatness-input:checked + .fatness-box{
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  opacity: 0.8;
+}
+
+.fatness-input:hover + .fatness-box,
+.fatness-input:focus + .fatness-box{
+  opacity: 1;
 }
 
 .filter-topping{
@@ -964,43 +959,37 @@ top: 105px;
   border-radius: 20px;
 }
 
-.filter-topping li{
-  position: relative;
+.topping{
   padding-left: 32px;
 }
 
-.filter-input-checkbox + label::before{
-  content: "";
+.topping-input{
   position: absolute;
-  top: 0px;
-  left: 0px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.topping-box{
+  position: absolute;
+  margin-left: -32px;
   width: 25px;
   height: 25px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  opacity: 0.8;
 }
 
-.filter-input-checkbox:checked + label::before{
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 25px;
-  height: 25px;
-  background-image: none;
-}
-
-.filter-input-checkbox:checked + label::after{
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 25px;
-  height: 25px;
+.topping-input:checked + .topping-box{
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  opacity: 0.8;
+}
+
+.topping-input:hover + .topping-box,
+.topping-input:focus + .topping-box{
+  opacity: 1;
 }
 
 .big-filter button{
