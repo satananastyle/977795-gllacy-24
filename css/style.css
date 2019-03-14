@@ -650,20 +650,31 @@ a.slide-button{
     transform: translateX(10px);
   }
 }
+.overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(50, 50, 50, 0.3);
+  z-index: 10;
+}
 
 .feedback-form{
   display: none;
   width: 477px;
   padding: 15px 25px 27px;;
   position: fixed;
-left: 392px;
-top: 105px;
+  left: 392px;
+  top: 105px;
   background-color: #f8f7f4;
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
   color: #323232;
   border-radius: 10px;
+  z-index: 15;
 }
 
 .feedback-form p{
@@ -709,7 +720,7 @@ top: 105px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #999999;
+  color: #323232;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
@@ -723,12 +734,16 @@ top: 105px;
   left: 292px;
 }
 
-.modal-show {
+.overlay-show{
+  display: block;
+}
+
+.modal-show{
   display: block;
   animation: bounce 0.6s;
 }
 
-.modal-error {
+.modal-error{
   animation: shake 0.6s;
 }
 
@@ -1353,6 +1368,21 @@ top: 105px;
   margin-left: -27px;
 }
 
+.map-contact iframe {
+  position: relative;
+  z-index: 3;
+  border: none;
+}
+
+.map-contact img{
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+
+margin: 0;
+}
+
 .contacts{
   position: absolute;
   top: 62px;
@@ -1362,6 +1392,7 @@ top: 105px;
   width: 302px;
   padding: 30px 25px;
   border-radius: 15px;
+  z-index: 4;
 }
 
 .contacts p{
@@ -1401,6 +1432,7 @@ top: 105px;
   background-image: url("../img/pin.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  z-index: 2;
 }
 
 .pages{
