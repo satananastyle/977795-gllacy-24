@@ -49,8 +49,8 @@ img{
 
 .list{
   list-style: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .site-wrapper{
@@ -170,6 +170,10 @@ a.slide-button{
   background-color: rgba(255, 255, 255, 0.4)
 }
 
+.slider-controls label:active{
+  background-color: #ffffff;
+}
+
 #product-1:checked ~ .site-wrapper{
   background-color: #849d8f;
   background-image: url("../img/slider-one.png");
@@ -198,7 +202,7 @@ a.slide-button{
 }
 
 .main-navigation{
-  padding: 5px 0px 0px;
+  padding: 5px 0 0;
   display: flex;
 }
 
@@ -265,7 +269,7 @@ a.slide-button{
 }
 
 .search svg{
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .site-navigation>li:hover>a,
@@ -319,9 +323,9 @@ a.slide-button{
   position: absolute;
   top: 36px;
   left: -5px;
-  padding: 0px;
+  padding: 0;
   padding-bottom: 10px;
-  margin: 0px;
+  margin: 0;
   width: 143px;
   background-color: #f8f7f4;
   border-radius: 5px;
@@ -347,13 +351,13 @@ a.slide-button{
 .catalog-menu a:focus{
   color: #323232;
   background-color: #fbded7;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .catalog-menu a:active{
   color: #323232;
   background-color: #f6b5a5;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .catalog-menu .new{
@@ -378,8 +382,8 @@ a.slide-button{
 
 .modal-search{
   display: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   position: absolute;
   top: 35px;
   left: -310px;
@@ -418,8 +422,8 @@ a.slide-button{
 
 .modal-login{
   display: none;
-  margin: 0px;
-  padding: 0px;
+  margin:0;
+  padding:0;
   position: absolute;
   top: 35px;
   left: -175px;
@@ -445,8 +449,8 @@ a.slide-button{
 }
 
 .login-form p{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   margin-bottom: 20px;
 }
 
@@ -466,8 +470,8 @@ a.slide-button{
 }
 
 .login-form a{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -680,9 +684,9 @@ a.slide-button{
 }
 
 .feedback-form p{
-  margin: 0px;
+  margin:0;
   margin-bottom: 20px;
-  padding: 0px;
+  padding:0;
 }
 
 .modal-close{
@@ -753,9 +757,9 @@ a.slide-button{
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
-  margin: 0px;
+  margin:0;
   margin-bottom: 25px;
-  padding: 0px;
+  padding:0;
 }
 
 .timetable{
@@ -768,8 +772,8 @@ a.slide-button{
 }
 
 .timetable p{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   margin-bottom: 5px;
 }
 
@@ -846,14 +850,14 @@ a.slide-button{
 }
 
 .filter{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   margin-right: 15px;
   border: none;
 }
 
 .filter-sort select{
-  margin: 0px;
+  margin:0;
   margin-bottom: 17px;
   padding: 7px 15px 9px;
   width: 193px;
@@ -1016,7 +1020,7 @@ a.slide-button{
 }
 
 .big-filter button{
-  margin: 0px;
+  margin:0;
   padding: 7px 27px 8px;
   font-size: 16px;
   line-height: 18px;
@@ -1051,8 +1055,8 @@ a.slide-button{
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   margin-bottom: 16px;
 }
 
@@ -1098,7 +1102,7 @@ a.slide-button{
   font-size: 45px;
   line-height: 41px;
   font-weight: 700;
-  margin: 0px;
+  margin:0;
   margin-bottom: 7px;
 }
 
@@ -1116,7 +1120,7 @@ a.slide-button{
   line-height: 45px;
   font-weight: 700;
   padding-left: 30px;
-  margin: 0px;
+  margin:0;
 }
 
 .catalog span::before{
@@ -1137,7 +1141,7 @@ a.slide-button{
   line-height: 22px;
   font-weight: 500;
   color: #ffffff;
-  margin: 0px;
+  margin:0;
 }
 
 .catalog a:hover,
@@ -1147,7 +1151,7 @@ a.slide-button{
 }
 
 .catalog-list{
-  padding: 0px;
+  padding:0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1155,16 +1159,16 @@ a.slide-button{
 .catalog-list li{
   width: 293px;
   position: relative;
-  margin: 0px 13px 15px -13px;
+  margin:0 13px 15px -13px;
 
 }
 
 .catalog-list li:nth-child(4n){
-  margin-right: 0px;
+  margin-right:0;
 }
 
 .catalog-list img{
-  margin: 0px;
+  margin:0;
   border-radius: 50%;
 }
 
@@ -1195,8 +1199,8 @@ a.slide-button{
   position: absolute;
   top: 215px;
   left: 10px;
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   margin-bottom: 32px;
   text-shadow: 1px 1px 1px #323232;
 }
@@ -1241,8 +1245,8 @@ a.slide-button{
 }
 
 .info-list{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1259,7 +1263,7 @@ a.slide-button{
   content: "";
   position: absolute;
   top: 10px;
-  left: 0px;
+  left:0;
   width: 49px;
   height: 49px;
   background-color: inherit;
@@ -1272,7 +1276,7 @@ a.slide-button{
   content: "";
   position: absolute;
   top: 10px;
-  left: 0px;
+  left:0;
   width: 49px;
   height: 49px;
   background-color: inherit;
@@ -1285,7 +1289,7 @@ a.slide-button{
   content: "";
   position: absolute;
   top: 10px;
-  left: 0px;
+  left:0;
   width: 49px;
   height: 49px;
   background-color: inherit;
@@ -1298,7 +1302,7 @@ a.slide-button{
   content: "";
   position: absolute;
   top: 10px;
-  left: 0px;
+  left:0;
   width: 49px;
   height: 49px;
   background-color: inherit;
@@ -1322,9 +1326,9 @@ a.slide-button{
 }
 
 .news h1{
-  margin: 0px;
+  margin:0;
   margin-bottom: 5px;
-  padding: 0px;
+  padding:0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -1332,8 +1336,8 @@ a.slide-button{
 }
 
 .news a{
-  margin: 0px;
-  padding: 0px;
+  margin:0;
+  padding:0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -1376,8 +1380,8 @@ a.slide-button{
 }
 
 .background p{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   margin-bottom: 35px;
 }
 
@@ -1415,8 +1419,8 @@ a.slide-button{
 }
 
 .contacts p{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   font-size: 14px;
   font-style: normal;
   line-height: 20px;
@@ -1424,8 +1428,8 @@ a.slide-button{
 }
 
 .contacts address{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   font-size: 18px;
   font-style: normal;
   line-height: 24px;
@@ -1438,7 +1442,7 @@ a.slide-button{
 
 .contacts .button{
   width: 100%;
-  margin: 0px;
+  margin:0;
 }
 
 .map-contact::before{
@@ -1476,7 +1480,7 @@ a.slide-button{
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 267px;
-  padding: 0px;
+  padding:0;
   margin: 43px -8px 20px 0;
 }
 
@@ -1524,7 +1528,7 @@ a.slide-button{
   width: 25px;
   height: 25px;
   top: 2px;
-  left: 0px;
+  left:0;
   background-color: inherit;
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
@@ -1559,8 +1563,8 @@ a.slide-button{
   flex-wrap: wrap;
   align-items: flex-end;
   width: 186px;
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
 }
 
 .social-list li{
@@ -1575,8 +1579,8 @@ a.slide-button{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
@@ -1600,8 +1604,8 @@ a.slide-button{
 }
 
 .documents{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1644,8 +1648,8 @@ a.slide-button{
 }
 
 .copyrigth{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
   width: 190px;
   font-size: 12px;
   line-height: 18px;
@@ -1653,8 +1657,8 @@ a.slide-button{
 }
 
 .copyrigth p{
-  padding: 0px;
-  margin: 0px;
+  padding:0;
+  margin:0;
 }
 
 .copyrigth a{
