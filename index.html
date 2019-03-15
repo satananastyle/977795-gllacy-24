@@ -38,7 +38,7 @@
               <ul class="list modal-search">
                 <li>
                   <form class="search-form"  method="post" action="https://echo.htmlacademy.ru">
-                    <input type="search" placeholder="Что ищем?">
+                    <label><input type="search" placeholder="Что ищем?" name="search"></label>
                   </form>
                 </li>
               </ul>
@@ -51,8 +51,8 @@
               <ul class="list modal-login">
                 <li>
                   <form class="login-form"  method="post" action="https://echo.htmlacademy.ru">
-                    <p><input type="text" placeholder="Электронная почта"></p>
-                    <p><input type="password" placeholder="Пароль"></p>
+                    <p><input type="text" placeholder="Электронная почта" name="login"></p>
+                    <p><input type="password" placeholder="Пароль" name="password"></p>
                     <div class="column">
                       <button class="button login-button" type="submit" value="Войти">Войти</button>
                       <div>
@@ -173,7 +173,7 @@
             <div class="background">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="distribution-form" method="post" action="https://echo.htmlacademy.ru">
-                <input type="text" placeholder="Электронная почта">
+                <input type="text" placeholder="Электронная почта" name="e-mail">
                 <button class="button" type="submit" value="Отправить">Отправить</button>
               </form>
             </div>
@@ -181,7 +181,7 @@
         </div>
         <section class="map-contact">
           <img src="img/map.jpg" width="1200" height="430" alt="Карта с адресом">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="430" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.32085871583106!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552571361957" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
           <div class="contacts">
             <p>Адрес главного офиса и офлайн-магазина:</p>
             <address class="space">ул. Большая Конюшенная 19/8, Санкт-Петербург</address>
@@ -244,7 +244,7 @@
         <button class="button" type="submit" value="Отправить">Отправить</button>
         <button class="modal-close" value="Закрыть">Закрыть</button>
       </form>
-      <div class="overlay"></>
+      <div class="overlay"></div>
     </div>
   </div>
   <script>

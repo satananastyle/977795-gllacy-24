@@ -389,7 +389,7 @@ a.slide-button{
 .search-form{
   width: 341px;
   padding: 20px 15px;
-  background: #f8f7f4;
+  background-color: #f8f7f4;
   border-radius: 5px;
 }
 
@@ -434,7 +434,7 @@ a.slide-button{
 .login-form{
   width: 277px;
   padding: 20px 20px;
-  background: #f8f7f4;
+  background-color: #f8f7f4;
   border-radius: 5px;
 }
 
@@ -523,6 +523,7 @@ a.slide-button{
 }
 
 .basket-table .name-orange{
+  background-color: inherit;
   background-image: url(../img/basket-ice-orange.png);
   background-size: 32px 32px;
   background-repeat: no-repeat;
@@ -530,6 +531,7 @@ a.slide-button{
 }
 
 .basket-table .name-strawberry{
+  background-color: inherit;
   background-image: url(../img/basket-ice-strawberry.png);
   background-size: 32px 32px;
   background-repeat: no-repeat;
@@ -738,12 +740,12 @@ a.slide-button{
   display: block;
 }
 
-.modal-show{
+.modal-show {
   display: block;
   animation: bounce 0.6s;
 }
 
-.modal-error{
+.modal-error {
   animation: shake 0.6s;
 }
 
@@ -948,12 +950,14 @@ a.slide-button{
   margin-left: -32px;
   width: 25px;
   height: 25px;
+  background-color: inherit;
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   opacity: 0.8;
 }
 
 .fatness-input:checked + .fatness-box{
+  background-color: inherit;
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -961,6 +965,7 @@ a.slide-button{
 
 .fatness-input:hover + .fatness-box,
 .fatness-input:focus + .fatness-box{
+  outline: 2px solid #8fbdec;
   opacity: 1;
 }
 
@@ -991,12 +996,14 @@ a.slide-button{
   margin-left: -32px;
   width: 25px;
   height: 25px;
+  background-color: inherit;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 0.8;
 }
 
 .topping-input:checked + .topping-box{
+  background-color: inherit;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   opacity: 0.8;
@@ -1005,6 +1012,7 @@ a.slide-button{
 .topping-input:hover + .topping-box,
 .topping-input:focus + .topping-box{
   opacity: 1;
+  outline: 2px solid #8fbdec;
 }
 
 .big-filter button{
@@ -1053,6 +1061,7 @@ a.slide-button{
 }
 
 .promo-item-one{
+  background-color: inherit;
   background: url("../img/raspberry-background.jpg") no-repeat;
   background-size: cover;
 }
@@ -1062,6 +1071,7 @@ a.slide-button{
 }
 
 .promo-item-two{
+  background-color: inherit;
   background: url("../img/chocolate-background.jpg") no-repeat;
   background-size: cover;
 }
@@ -1116,6 +1126,7 @@ a.slide-button{
   left: 82px;
   width: 31px;
   height: 36px;
+  background-color: inherit;
   background-image: url("../img/ruble.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1168,6 +1179,7 @@ a.slide-button{
   left: 15px;
   width: 61px;
   height: 61px;
+  background-color: inherit;
   background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1214,6 +1226,7 @@ a.slide-button{
 
 .info{
   color: #323232;
+  background-color: inherit;
   background: url("../img/waffle.jpg");
   background-size: cover;
   margin-bottom: 40px;
@@ -1249,6 +1262,7 @@ a.slide-button{
   left: 0px;
   width: 49px;
   height: 49px;
+  background-color: inherit;
   background-image: url("../img/cow.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1261,6 +1275,7 @@ a.slide-button{
   left: 0px;
   width: 49px;
   height: 49px;
+  background-color: inherit;
   background-image: url("../img/eco.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1273,6 +1288,7 @@ a.slide-button{
   left: 0px;
   width: 49px;
   height: 49px;
+  background-color: inherit;
   background-image: url("../img/thermometer.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1285,6 +1301,7 @@ a.slide-button{
   left: 0px;
   width: 49px;
   height: 49px;
+  background-color: inherit;
   background-image: url("../img/ice-cream.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1297,6 +1314,7 @@ a.slide-button{
 }
 
 .news{
+  background-color:#f8f7f4;
   background: url("../img/strawberry-background.jpg") no-repeat;
   padding: 23px 255px 80px 20px;
   width: 560px;
@@ -1330,6 +1348,7 @@ a.slide-button{
 
 .distribution{
   color: #5a5a5a;
+  background-color:#f8f7f4;
   background: url("../img/bg-post.svg") no-repeat;
   padding: 5px;
   width: 560px;
@@ -1375,12 +1394,12 @@ a.slide-button{
 }
 
 .map-contact img{
-position: absolute;
-top: 0;
-left: 0;
-z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 
-margin: 0;
+  margin: 0;
 }
 
 .contacts{
@@ -1429,6 +1448,7 @@ margin: 0;
   left: 265px;
   width: 200px;
   height: 140px;
+  background-color:inherit;
   background-image: url("../img/pin.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1505,6 +1525,7 @@ margin: 0;
   height: 25px;
   top: 2px;
   left: 0px;
+  background-color: inherit;
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1520,6 +1541,7 @@ margin: 0;
 .pages-list .next{
   font-size: 0;
   padding: 5px 14px;
+  background-color: inherit;
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1615,6 +1637,7 @@ margin: 0;
   left: -15px;
   width: 15px;
   height: 13px;
+  background-color: inherit;
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
