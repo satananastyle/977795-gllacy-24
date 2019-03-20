@@ -309,29 +309,29 @@ a.slide-button {
   margin-right: 0;
 }
 
-.site-navigation>li:hover>a,
-.site-navigation>li>a:hover,
-.site-navigation>li.active>a,
-.user-navigation>li:hover>a,
-.user-navigation>li>a:hover,
-.user-navigation>li.active>a {
+.site-navigation-item:hover>a,
+.site-navigation-item>a:hover,
+.site-navigation-item.active>a,
+.user-navigation-item:hover>a,
+.user-navigation-itemi>a:hover,
+.user-navigation-item.active>a {
   color: #323232;
   background-color: #f8f7f4;
   text-decoration: none;
   border-radius: 15px;
 }
 
-.site-navigation>li>a:active {
+.site-navigation-item>a:active {
   -webkit-box-shadow: inset 0 7px 5px -5px #323232;
   box-shadow: inset 0 7px 5px -5px #323232;
 }
 
-.user-navigation>li:hover>a path,
-.user-navigation>li>a:hover path,
-.user-navigation>li.active>a path,
-.user-navigation>li:hover>a circle,
-.user-navigation>li>a:hover circle,
-.user-navigation>li.active>a circle {
+.user-navigation-item:hover path,
+.user-modal:hover path,
+.user-navigation-item.active path,
+.user-navigation-item:hover circle,
+.user-modal:hover circle,
+.user-navigation-item.active circle {
   fill: #323232;
 }
 
@@ -442,8 +442,25 @@ a.slide-button {
   padding: 9px 14px;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
   color: #323232;
   border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.search-form input::-webkit-input-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.search-form input::-moz-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.search-form input:hover {
+  padding: 8px 13px;
+  border: 2px solid #d3d3d2;
   border-radius: 5px;
 }
 
@@ -506,9 +523,25 @@ a.slide-button {
   padding: 9px 13px;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
   color: #323232;
   border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.login-form input::-webkit-input-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.login-form input::-moz-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.login-form input:hover {
+  padding: 8px 12px;
+  border: 2px solid #d3d3d2;
   border-radius: 5px;
 }
 
@@ -828,8 +861,27 @@ a.slide-button {
   padding: 9px 15px;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
   color: #323232;
   border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.feedback-form input::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.feedback-form input::-moz-placeholder,
+.feedback-form textarea::-moz-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.feedback-form input:hover {
+  padding: 8px 14px;
+  border: 2px solid #d3d3d2;
   border-radius: 5px;
 }
 
@@ -843,9 +895,15 @@ a.slide-button {
   font-family: inherit;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
   color: #323232;
   border: 1px solid #d3d3d2;
+  border-radius: 5px;
+}
+
+.feedback-form textarea:hover {
+  padding: 5px 14px 1px;
+  border: 2px solid #d3d3d2;
   border-radius: 5px;
 }
 
@@ -1004,6 +1062,10 @@ a.slide-button {
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-position: 168px 13px;
+}
+
+.filter-sort select::-ms-expand {
+    display: none;
 }
 
 .filter-sort select:hover,
@@ -1205,7 +1267,7 @@ a.slide-button {
 }
 
 .promo-item-one {
-  background-color: inherit;
+  background-color: #7e1d37;
   background: url("../img/raspberry-background.jpg") no-repeat;
   background-size: cover;
 }
@@ -1215,7 +1277,7 @@ a.slide-button {
 }
 
 .promo-item-two {
-  background-color: inherit;
+  background-color: #3a1e13;
   background: url("../img/chocolate-background.jpg") no-repeat;
   background-size: cover;
 }
@@ -1237,7 +1299,7 @@ a.slide-button {
 
 .promo-item {
   width: 560px;
-  padding: 15px 20px 20px;
+  padding: 15px 20px 25px;
   border-radius: 15px;
 }
 
@@ -1250,7 +1312,7 @@ a.slide-button {
   margin-bottom: 7px;
 }
 
-.catalog-list h1 {
+.catalog-list h2 {
   text-align: center;
   font-size: 16px;
   line-height: 22px;
@@ -1326,7 +1388,7 @@ a.slide-button {
   content: "";
   position: absolute;
   top: 5px;
-  left: 15px;
+  left: 12px;
   width: 61px;
   height: 61px;
   background-color: inherit;
@@ -1359,6 +1421,7 @@ a.slide-button {
 
 .catalog-item:hover .button-catalog {
   display: inline-block;
+  vertical-align: top;
 }
 
 .ice .button-catalog:hover,
@@ -1375,11 +1438,11 @@ a.slide-button {
 
 .info {
   color: #323232;
-  background-color: inherit;
+  background-color: #ebdfc6;
   background: url("../img/waffle.jpg");
   background-size: cover;
   margin-bottom: 40px;
-  padding: 26px 20px;
+  padding: 24px 20px;
   border-radius: 15px;
 }
 
@@ -1406,7 +1469,7 @@ a.slide-button {
   position: relative;
   width: 542px;
   padding-left: 57px;
-  padding-top: 20px;
+  padding-top: 22px;
 }
 
 .farms::before {
@@ -1479,7 +1542,7 @@ a.slide-button {
   border-radius: 15px;
 }
 
-.news h1 {
+.news h2 {
   margin: 0;
   margin-bottom: 5px;
   padding: 0;
@@ -1520,7 +1583,24 @@ a.slide-button {
   border-radius: 5px;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
   color: #323232;
+}
+
+.distribution-form input::-webkit-input-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.distribution-form input::-moz-placeholder {
+  color: #999999;
+  font-weight: 400;
+}
+
+.distribution-form input:hover {
+  padding: 8px 14px;
+  border: 2px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .distribution-form input:focus {
@@ -1626,6 +1706,7 @@ a.slide-button {
 .pages::after {
   content: "";
   position: absolute;
+  left: 0px;
   top: 98px;
   width: 100%;
   height: 1px;
@@ -1708,7 +1789,8 @@ a.slide-button {
 
 .pages-list .next {
   font-size: 0;
-  padding: 5px 14px;
+  width: 25px;
+  height: 25px;
   background-color: inherit;
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;

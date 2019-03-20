@@ -15,7 +15,7 @@
           <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина GlassyShop">
         </a>
         <ul class="list site-navigation">
-          <li class="site-navigation-current"><a class="current" href="#">Каталог</a>
+          <li class="site-navigation-item site-navigation-current"><a class="current" href="#">Каталог</a>
             <ul class="list catalog-menu">
               <li><a class="new" href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -24,12 +24,12 @@
               <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О Компании</a></li>
+          <li class="site-navigation-item"><a href="#">Доставка и оплата</a></li>
+          <li class="site-navigation-item"><a href="#">О Компании</a></li>
         </ul>
         <ul class="list user-navigation">
           <li class="searching">
-            <a class="search" href="#">
+            <a class="user-modal search" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
               <span class="visually-hidden">Поиск</span>
             </a>
@@ -42,7 +42,7 @@
             </ul>
           </li>
           <li class="login">
-            <a href="#">
+            <a class="user-navigation-item user-modal" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#FFF"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
               Вход
             </a>
@@ -61,9 +61,9 @@
                 </form>
               </li>
             </ul>
-          </li>
-          <li class="basket">
-            <a class="basket-catalog" href="#" aria-label="Корзина">
+          </li >
+          <li class="user-navigation-item basket">
+            <a class="user-modal basket-catalog" href="#" aria-label="Корзина">
               2 товара
             </a>
             <ul class="list modal-basket">
@@ -188,7 +188,7 @@
             <article class="ice">
               <img src="img/orange-ice-cream.jpg" width="267" height="267" alt="Шарик апельсинового мороженого">
               <p>310<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h1>
+              <h2><a class="ice-name" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -196,7 +196,7 @@
             <article class="ice">
               <img src="img/coffee-ice-cream.jpg" width="267" height="267" alt="Шарик кофейного мороженого">
               <p>380<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочно-кофейное с кусочками шоколада</a></h1>
+              <h2><a class="ice-name" href="#">Сливочно-кофейное с кусочками шоколада</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -204,7 +204,7 @@
             <article class="ice">
               <img src="img/strawberry-ice-cream.jpg" width="267" height="267" alt="Шарик клубничного мороженого">
               <p>355<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h1>
+              <h2><a class="ice-name" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -212,7 +212,7 @@
             <article class="ice">
               <img src="img/caramel-ice-cream.jpg" width="267" height="267"  alt="Шарик мороженого крем-брюле">
               <p>415<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочное крем-брюле с карамельной подливкой</a></h1>
+              <h2><a class="ice-name" href="#">Сливочное крем-брюле с карамельной подливкой</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -220,7 +220,7 @@
             <article class="ice">
               <img src="img/cowberry-ice-cream.jpg" width="267" height="267"  alt="Шарик брусничного мороженого">
               <p>325<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочное с брусничным джемом</a></h1>
+              <h2><a class="ice-name" href="#">Сливочное с брусничным джемом</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -228,7 +228,7 @@
             <article class="ice">
               <img src="img/blueberries-ice-cream.jpg" width="267" height="267"  alt="Шарик черничного мороженого">
               <p>410<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочно-черничное с цельными ягодами черники</a></h1>
+              <h2><a class="ice-name" href="#">Сливочно-черничное с цельными ягодами черники</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -236,7 +236,7 @@
             <article class="ice">
               <img src="img/lemon-ice-cream.jpg" width="267" height="267"  alt="Шарик лимонного мороженого">
               <p>375<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочно-лимонное с карамельной присыпкой</a></h1>
+              <h2><a class="ice-name" href="#">Сливочно-лимонное с карамельной присыпкой</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -244,7 +244,7 @@
             <article class="ice">
               <img src="img/chocolate-ice-cream.jpg" width="267" height="267" alt="Шарик мороженого с шоколадной стружкой">
               <p>320<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочное с шоколадной стружкой</a></h1>
+              <h2><a class="ice-name" href="#">Сливочное с шоколадной стружкой</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -252,7 +252,7 @@
             <article class="ice">
               <img src="img/vanila-ice-cream.jpg" width="267" height="267" alt="Шарик ванильного мороженого">
               <p>440<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочно-ванильное с кусочками шоколада</a></h1>
+              <h2><a class="ice-name" href="#">Сливочно-ванильное с кусочками шоколада</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -260,7 +260,7 @@
             <article class="ice">
               <img src="img/menthol-ice-cream.jpg" width="267" height="267" alt="Шарик ментолового мороженого">
               <p>435<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочное с ментоловым сиропом</a></h1>
+              <h2><a class="ice-name" href="#">Сливочное с ментоловым сиропом</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -268,7 +268,7 @@
             <article class="ice">
               <img src="img/darkchocolate-ice-cream.jpg" width="267" height="267"  alt="Шарик мороженого с кусочками шоколада">
               <p>355<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочное с кусочками черного шоколада</a></h1>
+              <h2><a class="ice-name" href="#">Сливочное с кусочками черного шоколада</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
@@ -276,7 +276,7 @@
             <article class="ice">
               <img src="img/mint-ice-cream.jpg" width="267" height="267"  alt="Шарик мятного мороженого">
               <p>420<span>/кг</span></p>
-              <h1><a class="ice-name" href="#">Сливочное с мятным сиропом</a></h1>
+              <h2><a class="ice-name" href="#">Сливочное с мятным сиропом</a></h2>
               <a class="button button-catalog" href="#">Быстрый просмотр</a>
             </article>
           </li>
